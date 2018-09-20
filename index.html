@@ -25,7 +25,6 @@
         }
         
         .second-container {
-            background: lightblue;
             border: 1px solid red;
             display: inherit;
             grid-template-columns: 5vw 15vw 50vw 10vw 5vw 5vw 5vw 5vw;
@@ -33,7 +32,6 @@
         }
         
         .third-container {
-            background: orange;
             border: 1px solid blue;
         }
         
@@ -75,15 +73,69 @@
             background: fuchsia;
             border: 1px solid black;
         }
+        
+        .fifth-cont {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-auto-rows: 50% 50%;
+            padding: 4%;
+        }
+        
+        .contents {
+            background: fuchsia;
+            border: 1px solid black;
+        }
+        
+        .contenido-f {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+        
+        #search-text-input {
+            border-top: thin solid #e5e5e5;
+            border-right: thin solid #e5e5e5;
+            border-bottom: 0;
+            border-left: thin solid #e5e5e5;
+            box-shadow: 0px 1px 1px 1px #e5e5e5;
+            float: left;
+            height: 17px;
+            margin: .8em 0 0 .5em;
+            outline: 0;
+            padding: .4em 0 .4em .6em;
+            width: 80%;
+        }
+        
+        #button-holder {
+            background-color: #f1f1f1;
+            border-top: thin solid #e5e5e5;
+            box-shadow: 1px 1px 1px 1px #e5e5e5;
+            cursor: pointer;
+            float: left;
+            height: 27px;
+            margin: 9px 0 0 0;
+            text-align: center;
+            width: 50px;
+        }
+        
+        #button-holder img {
+            margin: 4px;
+            width: 20px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-main">
+    <div class="container-main" style="box-shadow: 0 0 0 3px rgba(52,144,220,0.5);">
         <div class="second-container">
-            <div class="third-container">contenido #1</div>
-            <div class="third-container">contenido #2</div>
-            <div class="third-container">contenido #3</div>
+            <div class="third-container contenido-f"><img style="width:50%; height:auto" src="http://assets.stickpng.com/thumbs/588a64e7d06f6719692a2d11.png" alt=""></div>
+            <div class="third-container"><img style="width:50%; height:auto" src="https://i.kinja-img.com/gawker-media/image/upload/s--ohRBA8uj--/c_scale,f_auto,fl_progressive,q_80,w_800/pol5zfmalpqmpt1jcnbp.png" alt=""></div>
+            <div class="third-container">
+                <input type='text' placeholder='Search...' id='search-text-input' />
+                <div id='button-holder'>
+                    <img src='https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png' />
+                </div>
+            </div>
             <div class="third-container">contenido #4</div>
             <div class="third-container">contenido #5</div>
             <div class="third-container">contenido #6</div>
@@ -104,7 +156,19 @@
 
 
                 </div>
-                <div class="sixth-container">
+                <div class="sixth-container fifth-cont">
+
+                    <div class="contents"></div>
+                    <div class="contents"></div>
+                    <div class="contents"></div>
+                    <div class="contents"></div>
+                    <div class="contents"></div>
+
+                    <div class="contents"></div>
+                    <div class="contents"></div>
+                    <div class="contents"></div>
+                    <div class="contents"></div>
+                    <div class="contents"></div>
 
 
                 </div>
