@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container-main {
+            display: grid;
+            /*fr*/
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 6vh 93vh;
+            height: 100vh;
+        }
+        
+        .second-container {
+            background: lightblue;
+            border: 1px solid red;
+            display: inherit;
+            grid-template-columns: 5vw 15vw 50vw 10vw 5vw 5vw 5vw 5vw;
+            height: auto;
+        }
+        
+        .third-container {
+            background: orange;
+            border: 1px solid blue;
+        }
+        
+        .fourth-container {
+            background: lightblue;
+            border: 1px solid pink;
+            display: inherit;
+            grid-template-columns: 15vw 85vw;
+        }
+        
+        .fifth-container {
+            background: orange;
+            border: 1px solid yellow;
+            display: inherit;
+            grid-template-rows: 40% 60%;
+        }
+        
+        .two-block {
+            background: seagreen;
+            border: 1px solid pink;
+            display: inherit;
+            grid-template-columns: 50% 50%;
+        }
+        
+        .seventh-container {
+            background: seagreen;
+            border: 1px solid black;
+            height: 100%;
+        }
+        
+        .three-rows {
+            display: inherit;
+            background: fuchsia;
+            border: 1px solid black;
+            grid-template-rows: 33% 33% 33%;
+        }
+        
+        .box-text {
+            background: fuchsia;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="second-container">
+            <div class="third-container">contenido #1</div>
+            <div class="third-container">contenido #2</div>
+            <div class="third-container">contenido #3</div>
+            <div class="third-container">contenido #4</div>
+            <div class="third-container">contenido #5</div>
+            <div class="third-container">contenido #6</div>
+            <div class="third-container">contenido #7</div>
+            <div class="third-container">contenido #8</div>
+        </div>
+        <div class="fourth-container">
+            <div class="fifth-container"></div>
+            <div class="fifth-container ">
+                <div class="sixth-container two-block">
+                    <div class="seventh-container three-rows ">
+                        <div class="box-text"></div>
+                        <div class="box-text"></div>
+                        <div class="box-text"></div>
+                    </div>
+                    <div class="seventh-container "></div>
+
+
+
+                </div>
+                <div class="sixth-container">
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
